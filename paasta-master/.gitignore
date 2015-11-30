@@ -1,0 +1,26 @@
+build/
+dist/
+.tox
+.pip/
+*.py?
+.*.sw?
+paasta_tools.egg-info/
+docs/man/
+docs/source/generated/
+tags
+venv
+.bash_history
+.lesshst
+.coverage
+coverage-html/
+
+# Generated debian artifacts
+debian/paasta-tools/
+debian/files
+debian/paasta-tools.substvars
+debian/paasta-tools.debhelper.log
+debian/paasta-tools.postinst.debhelper
+
+# Itest artifacts
+fake_service_uno/
+paasta_itests/mesos-cli.json
