@@ -1,0 +1,36 @@
+Projet PaaSTA Box - Instructions d'installation
+
+Voici la liste des commandes à entrer dans l'ordre pour permettre une installation correcte.
+
+
+#	Mise à jour des composant avant installations des packages
+
+$ sudo apt-get update
+
+#	Installation de Git
+
+$ sudo apt-get install git
+
+#	Installation de pip
+
+$ sudo apt-get install python-pip python-dev build essential
+
+$ sudo pip install --upgrade pip
+$ sudo pip install --upgrade virtualenv
+
+#	Installation de tox
+
+$ sudo pip install tox
+$ sudo easy_install tox
+
+#	Installation de Docker
+
+$ sudo wget -qO- https://get.docker.com/ | sh
+
+#	Récupération de PaaSTA Yelp
+
+$ git clone https://github.com/yelp/paasta.git
+
+#	Test de PaaSTA
+
+$ sudo make itest
